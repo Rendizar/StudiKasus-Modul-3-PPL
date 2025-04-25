@@ -19,10 +19,10 @@ class RegisterTest extends DuskTestCase
                 ->clickLink('Register') //click ke link register  
                 ->assertPathIs('/register') //memastikan path adalah /register
                 ->type('name', 'brok') //interaksi dengan form nama pada halaman
-                ->type('email', 'brok123@gmail.com') //interaksi dengan form email pada halaman
+                ->type('email', 'broki13@gmail.com') //interaksi dengan form email pada halaman
                 ->type('password', '12345678') //interaksi dengan form password pada halaman
                 ->type('password_confirmation', '12345678') //interaksi dengan form konfirmasi password pada halaman
-                ->press (button:'REGISTER') //menekan tombol register
+                ->press ('REGISTER') //menekan tombol register
                 ->assertPathIs('/dashboard'); //memastikan path adalah /dashboard
                 
                 
